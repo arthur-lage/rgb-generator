@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RGB Generator</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./styles.css" />
+
+    <script src="./main.js" defer></script>
+  </head>
+  <body>
+    <h1>RGB Generator</h1>
+
+    <div class="sliders">
+      <div class="red">
+        <h3>R</h3>
+        <span>255</span>
+        <input type="range" value="255" min="0" max="255" name="red" id="red" />
+      </div>
+      <div class="green">
+        <h3>G</h3>
+        <span>255</span>
+        <input
+          type="range"
+          value="255"
+          min="0"
+          max="255"
+          name="green"
+          id="green"
+        />
+      </div>
+      <div class="blue">
+        <h3>B</h3>
+        <span>255</span>
+        <input
+          type="range"
+          value="255"
+          min="0"
+          max="255"
+          name="blue"
+          id="blue"
+        />
+      </div>
+    </div>
+
+    <div class="ball"></div>
+
+    <div class="values">
+      <div class="rgb">
+        <span id="rgb-value">255</span>
+      </div>
+    </div>
+  </body>
+</html>
